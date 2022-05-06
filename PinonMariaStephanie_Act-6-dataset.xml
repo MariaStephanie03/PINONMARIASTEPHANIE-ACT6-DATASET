@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE web-courses [
+	<!ELEMENT web-courses (course)>
+	<!ELEMENT course (id, title, url, is-paid, price, num-subscribers, num-reviews, num-published-lectures, instructional-level, content-info, published-time)>
+
+	<!ELEMENT course (#PCDATA)>
+	<!ELEMENT id (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT url (#PCDATA)>
+	<!ELEMENT is-paid (#PCDATA)>
+	<!ELEMENT price (#PCDATA)>
+	<!ELEMENT num-subscribers (#PCDATA)>
+	<!ELEMENT num-reviews (#PCDATA)>
+	<!ELEMENT num-published-lectures (#PCDATA)>
+	<!ELEMENT instructional-level (#PCDATA)>
+	<!ELEMENT content-info (#PCDATA)>
+	<!ELEMENT published-time (#PCDATA)>
+
+	<!ATTLIST course number CDATA #REQUIRED>
+
+
+]>
+
 <web-courses>
-	<first-course>
-		<id number="one">28295</id>
+	
+	<course number="one">
+		<id>28295</id>
 		<title>Learn Web Designing and HTML5/CSS3 Essentials</title>
 		<url>https://www.udemy.com/build-beautiful-html5-website/</url>
 		<is-paid>TRUE</is-paid>
@@ -13,10 +36,10 @@
 		<instructional-level>All levels</instructional-level>
 		<content-info>4 hours</content-info>
 		<published-time>2013-01-03T00:55:31Z</published-time>
-    </first-course>
+    </course>
 
-    <second-course>
-		<id number="two">19603</id>
+    <course number="two">
+		<id>19603</id>
 		<title>Learning Dynamic Website Design - PHP MySQL and JavaScript</title>
 		<url>https://www.udemy.com/learning-dynamic-website-design/</url>
 		<is-paid>TRUE</is-paid>
@@ -27,10 +50,10 @@
 		<instructional-level>All levels</instructional-level>
 		<content-info>12.5 hours</content-info>
 		<published-time>2012-06-18T16:52:34Z</published-time>
-	</second-course>
+	</course>
 
-    <third-course>
-		<id number="three">889438</id>
+    <course number="three">
+		<id>889438</id>
 		<title>ChatBots: Messenger ChatBot with API.AI and Node.JS</title>
 		<url>https://www.udemy.com/chatbots/</url>
 		<is-paid>TRUE</is-paid>
@@ -41,10 +64,10 @@
 		<instructional-level>All levels</instructional-level>
 		<content-info>4.5 hours</content-info>
 		<published-time>2016-06-30T16:57:08Z</published-time>
-	</third-course>
+	</course>
 
-	<fourth-course>
-		<id number="four">197836</id>
+	<course number="four">
+		<id>197836</id>
 		<title>Projects in HTML5</title>
 		<url>https://www.udemy.com/projects-in-html5/</url>
 		<is-paid>TRUE</is-paid>
@@ -55,10 +78,10 @@
 		<instructional-level>Intermediate Level</instructional-level>
 		<content-info>15.5 hours</content-info>
 		<published-time>2014-06-17T05:43:50Z</published-time>
-	</fourth-course>
+	</course>
 
-	<fifth-course>
-		<id number="five">505208</id>
+	<course number="five">
+		<id>505208</id>
 		<title>Programming Foundations: HTML5 + CSS3 for Entrepreneurs 2015</title>
 		<url>https://www.udemy.com/html-css-more/</url>
 		<is-paid>TRUE</is-paid>
@@ -69,10 +92,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>5.5 hours</content-info>
 		<published-time>2015-10-17T04:52:25Z</published-time>
-	</fifth-course>
+	</course>
 
-	<sixth-course>
-		<id number="six">1086834</id>
+	<course number="six">
+		<id>1086834</id>
 		<title>How To Make A Wordpress Website 2017 | Divi Theme Tutorial</title>
 		<url>https://www.udemy.com/how-to-make-a-wordpress-website-2017-divi-theme-tutorial/</url>
 		<is-paid>TRUE</is-paid>
@@ -83,10 +106,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>4 hours</content-info>
 		<published-time>2017-01-26T22:15:02Z</published-time>
-	</sixth-course>
+	</course>
 
-	<seventh-course>
-		<id number="seven">1094964</id>
+	<course number="seven">
+		<id>1094964</id>
 		<title>Build Your Own Backend REST API using Django REST Framework</title>
 		<url>https://www.udemy.com/django-python/</url>
 		<is-paid>TRUE</is-paid>
@@ -97,10 +120,10 @@
 		<instructional-level>Intermediate Level</instructional-level>
 		<content-info>5.5 hours</content-info>
 		<published-time>2017-04-27T19:21:11Z</published-time>
-	</seventh-course>
+	</course>
 
-	<eigth-course>
-		<id number="eight">965870</id>
+	<course number="eight">
+		<id>965870</id>
 		<title>Angular and Firebase - Build a Web App with Typescript</title>
 		<url>https://www.udemy.com/angular-firebase-application/</url>
 		<is-paid>TRUE</is-paid>
@@ -111,10 +134,10 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>5 hours</content-info>
 		<published-time>2016-09-27T21:46:03Z</published-time>
-	</eigth-course>
+	</course>
 
-	<ninth-course>
-		<id number="nine">965528</id>
+	<course number="nine">
+		<id>965528</id>
 		<title>Web Development Masterclass - Complete Certificate Course</title>
 		<url>https://www.udemy.com/web-development-masterclass-complete-certificate-course/</url>
 		<is-paid>TRUE</is-paid>
@@ -125,10 +148,10 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>19.5 hours</content-info>
 		<published-time>2016-10-12T03:14:13Z</published-time>
-	</ninth-course>
+	</course>
 
-	<tenth-course>
-		<id number="ten">1078208</id>
+	<course number="ten">
+		<id>1078208</id>
 		<title>Spring Boot Tutorial For Beginners</title>
 		<url>https://www.udemy.com/spring-boot-tutorial-for-beginners/</url>
 		<is-paid>TRUE</is-paid>
@@ -139,10 +162,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>5.5 hours</content-info>
 		<published-time>2017-01-23T15:13:53Z</published-time>
-	</tenth-course>
+	</course>
 
-	<eleventh-course>
-		<id number="eleven">642410</id>
+	<course number="eleven">
+		<id>642410</id>
 		<title>The Complete Bootstrap Masterclass Course - Build 4 Projects</title>
 		<url>https://www.udemy.com/bootstrapcourse/</url>
 		<is-paid>TRUE</is-paid>
@@ -153,10 +176,10 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>7 hours</content-info>
 		<published-time>2015-10-27T20:27:11Z</published-time>
-	</eleventh-course>
+	</course>
 
-	<twelfth-course>
-		<id number="twelve">785388</id>
+	<course number="twelve">
+		<id>785388</id>
 		<title>Scaling Docker on AWS</title>
 		<url>https://www.udemy.com/scaling-docker-on-aws/</url>
 		<is-paid>TRUE</is-paid>
@@ -167,10 +190,10 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>6 hours</content-info>
 		<published-time>2016-03-28T17:51:04Z</published-time>
-	</twelfth-course>
+	</course>
 
-	<thirteenth-course>
-		<id number="thirteen">1146014</id>
+	<course number="thirteen">
+		<id>1146014</id>
 		<title>Learn JavaScript for beginners</title>
 		<url>https://www.udemy.com/learn-javascript-course/</url>
 		<is-paid>TRUE</is-paid>
@@ -181,10 +204,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>1.5 hours</content-info>
 		<published-time>2017-03-16T20:57:12Z</published-time>
-	</thirteenth-course>
+	</course>
 
-	<fourteenth-course>
-		<id number="fourteen">8325</id>
+	<course number="fourteen">
+		<id>8325</id>
 		<title>HTML Tutorial: HTML and CSS for Beginners</title>
 		<url>https://www.udemy.com/learn-html5/</url>
 		<is-paid>TRUE</is-paid>
@@ -195,10 +218,10 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>4 hours</content-info>
 		<published-time>2011-09-09T15:28:59Z</published-time>
-	</fourteenth-course>
+	</course>
 
-	<fifteenth-course>
-		<id number="fifteen">987064</id>
+	<course number="fifteen">
+		<id>987064</id>
 		<title>Learn by Doing: Vue JS 2.0 the Right Way</title>
 		<url>https://www.udemy.com/learn-by-doing-vue-js-2-the-right-way/</url>
 		<is-paid>TRUE</is-paid>
@@ -209,10 +232,10 @@
 		<instructional-level>Intermediate Level</instructional-level>
 		<content-info>3.5 hours</content-info>
 		<published-time>2016-11-07T17:53:40Z</published-time>
-	</fifteenth-course>
+	</course>
 
-	<sixteenth-course>
-		<id number="sixteen">94428</id>
+	<course number="sixteen">
+		<id>94428</id>
 		<title>Learn Complete Web Development From Scratch</title>
 		<url>https://www.udemy.com/learn-complete-web-development-from-scratch/</url>
 		<is-paid>TRUE</is-paid>
@@ -223,10 +246,10 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>12 hours</content-info>
 		<published-time>2013-10-23T09:23:00Z</published-time>
-	</sixteenth-course>
+	</course>
 
-	<seventeenth-course>
-		<id number="seventeen">159070</id>
+	<course number="seventeen">
+		<id>159070</id>
 		<title>Introduction to Web Development: HTML</title>
 		<url>https://www.udemy.com/webdevelopment101_html/</url>
 		<is-paid>TRUE</is-paid>
@@ -237,10 +260,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>3 hours</content-info>
 		<published-time>2014-02-13T20:39:33Z</published-time>
-	</seventeenth-course>
+	</course>
 
-	<eighteenth-course>
-		<id number="eighteen">920306</id>
+	<course number="eighteen">
+		<id>920306</id>
 		<title>Web Site for Beginners - Learn Web Building like knitting</title>
 		<url>https://www.udemy.com/web-design-for-grandmothers-with-html/</url>
 		<is-paid>TRUE</is-paid>
@@ -251,10 +274,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>1.5 hours</content-info>
 		<published-time>2016-08-10T00:40:59Z</published-time>
-	</eighteenth-course>
+	</course>
 
-	<nineteenth-course>
-		<id number="nineteen">1089744</id>
+	<course number="nineteen">
+		<id>1089744</id>
 		<title>How To Make A Wordpress Website 2017 - Divi Theme Tutorial</title>
 		<url>https://www.udemy.com/how-to-make-a-wordpress-website-2017-divi-theme-tutorial-for-beginners/</url>
 		<is-paid>TRUE</is-paid>
@@ -265,10 +288,10 @@
 		<instructional-level>Beginner Level</instructional-level>
 		<content-info>3 hours</content-info>
 		<published-time>2017-01-26T17:16:27Z</published-time>
-	</nineteenth-course>
+	</course>
 
-	<twentieth-course>
-		<id number="twenty">16646</id>
+	<course number="twenty">
+		<id>16646</id>
 		<title>Web Programming with Python</title>
 		<url>https://www.udemy.com/web-programming-with-python/</url>
 		<is-paid>TRUE</is-paid>
@@ -279,7 +302,7 @@
 		<instructional-level>All Levels</instructional-level>
 		<content-info>4 hours</content-info>
 		<published-time>2012-04-25T00:01:43Z</published-time>
-	</twentieth-course>
+	</course>
 
 </web-courses>
 
